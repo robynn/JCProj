@@ -4,6 +4,26 @@ Action Calculator
 Overview:
 The ActionCalc class is a small thread-safe class library that accepts JSON-formatted entries of action/time pairs and, on demand, supplies JSON-formatted output containing averages for each action.
 
+ActionCalc.java may be compiled into any executable or test program with no external dependencies. 
+
+To use:
+
+Option 1: Compile into your executable 
+
+Copy ActionCalc.java into your executable.  Change the package name as desired.
+Instantiate an ActionCalc() object by calling the no argument constructor.
+Call ActionCalc.addAction(String) with a formatted input string.
+Call ActionCalc.getStats() to retrieve JSON-formatted output with containing the average action times.
+
+Option 2: Compile and test using the included TestRunner.java in Eclipse.
+Clone the JCProj repository.
+Open as a project in Eclipse.
+Modify the test cases in Tester.java and the number of threads in TestRunner.java as desired.
+Execute TestRunner.main() and view the console output to track the proress of additions and requests for stats.
+
+Option 3: Build, Package, add to your Classpath
+To be added.
+
 Assumptions: 
 Action times must be integers.  
 Floating point averages were not necessary.
